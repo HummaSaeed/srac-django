@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^$../authentication/ [L,R=301]
