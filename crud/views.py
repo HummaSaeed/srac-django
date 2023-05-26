@@ -3,6 +3,7 @@ from rest_framework.response import Response
 from .models import Item
 from .serializers import ItemSerializer
 from django.http import JsonResponse
+from django.http import HttpResponse
  
 @api_view(['GET'])
 def ApiOverview(request):
@@ -13,6 +14,7 @@ def ApiOverview(request):
         'Update': '/update/pk',
         'Delete': '/item/pk/delete'
     }
+    response = HttpResponse()
     response['Access-Control-Allow-Origin'] = '*'
     return Response(api_urls)
 @api_view(['POST'])
