@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-^l8^#gop2$+a0)d0w4*(lc_lr90vrfegnj7bpc3b$8vhsr-jvs'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['admin.srac.me']
 
@@ -79,6 +79,7 @@ WSGI_APPLICATION = 'authentication.wsgi.application'
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ORIGIN_WHITELIST = [
+    'http://admin.srac.me',
     'http://localhost:3000',
     'http://example.com',
 ]
@@ -143,7 +144,7 @@ REST_FRAMEWORK = {
         'knox.auth.TokenAuthentication',
     ]
 }
-STATIC_URL = '/static/'
+STATIC_URL = 'https://admin.srac.me/static/'
 STATIC_ROOT = '../static/'
 MEDIA_ROOT = '../crud'
 MEDIA_URL = 'https://admin.srac.me/images/'
