@@ -10,4 +10,4 @@ urlpatterns = [
     path('update/<int:pk>/', views.update_items, name='update-items'),
      path('item/<int:pk>/delete/', views.delete_items, name='delete-items'),
 ]
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns +=  static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

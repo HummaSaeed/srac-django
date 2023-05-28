@@ -143,5 +143,7 @@ REST_FRAMEWORK = {
         'knox.auth.TokenAuthentication',
     ]
 }
+STATIC_URL = '/static/'
+STATIC_ROOT = '../static/'
 MEDIA_ROOT = '../crud'
-MEDIA_URL = '/images/'
+MEDIA_URL = 'https://admin.srac.me/images/'
