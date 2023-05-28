@@ -147,4 +147,4 @@ REST_FRAMEWORK = {
 STATIC_URL = 'https://admin.srac.me/static/'
 STATIC_ROOT = '../static/'
 MEDIA_ROOT = '../crud'
-MEDIA_URL = 'https://admin.srac.me/images/'
+MEDIA_URL = '/images/'
