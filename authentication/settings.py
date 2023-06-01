@@ -32,7 +32,7 @@ ALLOWED_HOSTS = ['admin.srac.me']
 # Application definition
 
 INSTALLED_APPS = [
-    'corsheaders',
+    "corsheaders",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -54,7 +54,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
-    'django.middleware.common.CommonMiddleware',
+    'django.middleware.common.CommonMiddleware'
 ]
 
 ROOT_URLCONF = 'authentication.urls'
@@ -82,6 +82,7 @@ CORS_ORIGIN_WHITELIST = [
     'http://admin.srac.me',
     'http://localhost:3000',
     'http://example.com',
+    'http://shop.srac.me',
 ]
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
