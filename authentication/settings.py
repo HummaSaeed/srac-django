@@ -79,13 +79,13 @@ WSGI_APPLICATION = 'authentication.wsgi.application'
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ORIGIN_WHITELIST = [
-    'http://admin.srac.me/api/login',
+    'http://admin.srac.me/admin',
     'http://localhost:3000',
     'http://example.com',
     'http://shop.srac.me',
 ]
 CORS_ALLOWED_ORIGINS = [
-    'http://admin.srac.me',
+    'http://admin.srac.me/admin',
     'http://localhost:3000/',
     'http://shop.srac.me',
 ]
