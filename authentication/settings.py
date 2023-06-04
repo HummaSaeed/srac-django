@@ -84,6 +84,9 @@ CORS_ORIGIN_WHITELIST = [
     'http://example.com',
     'http://shop.srac.me',
 ]
+CORS_ALLOWED_ORIGINS = [
+    'http://admin.srac.me',
+]
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
