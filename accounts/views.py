@@ -16,7 +16,7 @@ class RegisterAPI(generics.GenericAPIView):
         serializer.is_valid(raise_exception=True)
         user = serializer.save()
         response = HttpResponse()
-        response['Access-Control-Allow-Origin'] = 'https://admin.srac.me'
+        response['Access-Control-Allow-Origin'] = 'http://localhost:3000'
         return Response({
         "user": UserSerializer(user, context=self.get_serializer_context()).data,
         "token": AuthToken.objects.create(user)[1]

@@ -15,7 +15,7 @@ def ApiOverview(request):
         'Delete': '/item/pk/delete'
     }
     response = HttpResponse()
-    response['Access-Control-Allow-Origin'] = 'https://admin.srac.me'
+    response['Access-Control-Allow-Origin'] = 'http://localhost:3000'
     return Response(api_urls)
 @api_view(['POST'])
 def add_items(request):
